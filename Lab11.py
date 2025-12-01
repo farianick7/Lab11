@@ -88,7 +88,7 @@ def assignment_stats(assignment_name, assignments, submissions):
         print("Assignment not found")
         return None
     min_score = round(min(scores))
-    avg_score = round(sum(scores) / len(scores))
+    avg_score = int(sum(scores) / len(scores))
     max_score = round(max(scores))
     print(f"Min: {min_score}%")
     print(f"Avg: {avg_score}%")
